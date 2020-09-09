@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Simple Library</title>
+</head>
+<body>
+	<h1>Simple Library</h1>
+	<button id="addBook">Add book</button>
+
+	<div id="bookModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close">&times;</span>
+			<h2>Add Book</h2>
+		</div>
+		<div class="modal-body">
+			<form id="bookForm">
+				<label for="title">Title of the book:</label>
+				<input type="text" name="title" class="reset">
+				<label for="author">Author:</label>
+				<input type="text" name="author" class="reset">
+				<label for="pages">Number of pages:</label>
+				<input type="number" name="pages" class="reset">
+				<p class="hidden danger" id="verification">All three values are required</p>
+				<label for="read">Read:</label>
+				<input type="checkbox" name="read">
+			</form>
+			<button id="submit">Submit</button>
+		</div>
+	  </div>
+	</div>
+
+	<section class="container" id="library">
+	</section>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
